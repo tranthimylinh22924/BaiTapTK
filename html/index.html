@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <script src="../js/jquery-3.7.1.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/index.js"></script>
+</head>
+<style>
+  table,
+  th,
+  td {
+    border: 1px solid #ddd;
+  }
+  .button {
+    border: 0;
+    padding: 8px 14px;
+    color: white;
+  }
+</style>
+<body>
+  <div class="container">
+    <img src="../img/HEADER.png" class="w-100 object-fit-cover" alt="">
+    <div class="p-3" style="background-color: #ddd;">
+      <a href="#" class="me-2">Đăng nhập</a>
+      <a href="#" data-toggle="modal" data-target="#myModal">Đăng ký</a>
+    </div>
+    <h1 style="font-size: 40px; text-align: center;">DANH SACH THAM ĐỘI ROBOCON KHOA CNTT</h1>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>STT</th>
+          <th>Mã thành viên</th>
+          <th>Họ tên</th>
+          <th>Lớp</th>
+          <th>Ngày tham gia</th>
+          <th>Điện thoại</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody id="data">
+      </tbody>
+    </table>
+    <div style="border: 1px solid #ddd; display: flex; justify-content: space-evenly" class="text-center">
+      <h4 class="m-0">SVTH: Trần Thị Mỹ Linh</h4>
+      <h4 class="m-0">Mã số sinh viên: 22718951</h4>
+      <h4 class="m-0">Lớp: DHTMDT18B</h4>
+    </div>
+    <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4>THÔNG TIN CÁ NHÂN</h4>
+            <button type="button" class="btn-close" data-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <div class="mb-0">
+                <label for="ma" class="form-label">Mã thành viên:</label>
+                <input type="text" class="form-control" id="ma" placeholder="Mã: K16-123456789">
+                <span class="text-danger">*</span>
+              </div>
+              <div class="mb-0">
+                <label for="ten" class="form-label">Họ tên:</label>
+                <input type="text" class="form-control" id="ten" placeholder="Họ tên: Tran Anh Dung">
+                <span class="text-danger">*</span>
+              </div>
+              <div class="mb-0">
+                <label for="lop" class="form-label">Lớp:</label>
+                <input type="text" class="form-control" id="lop" placeholder="Lớp: DHKTPM16ATT">
+                <span class="text-danger">*</span>
+              </div>
+              <div class="mb-0">
+                <label for="ngay" class="form-label">Ngày tham gia:</label>
+                <input type="date" class="form-control" id="ngay">
+                <span class="text-danger">*</span>
+              </div>
+              <div class="mb-0">
+                <label for="sdt" class="form-label">Số điện thoại:</label>
+                <input type="text" class="form-control" id="sdt" placeholder="SDT: 0xxx-xxx-xxx">
+                <span class="text-danger">*</span>
+              </div>
+              <div class="mb-0">
+                <label for="email" class="form-label">Email:</label>
+                <input type="text" class="form-control" id="email" placeholder="Email: xxxxxx@iuh.edu.vn">
+                <span class="text-danger">*</span>
+              </div>
+              <button type="submit" id="submit" style="background-color: green; width: 100%;">Lưu</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
